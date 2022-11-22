@@ -1,6 +1,6 @@
 ![Jessica](https://media.giphy.com/media/B1bMjDNIwe4T09fNai/giphy.gif)
 
-# Project Title
+# Are you useless?
 
 Text about the project. This would also be a great place to link the game on Netlify.
 
