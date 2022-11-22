@@ -1,4 +1,4 @@
-![test](https://media.giphy.com/media/lcjWzvc9po5Og6eV4V/giphy.gif)
+![Jessica](https://media.giphy.com/media/B1bMjDNIwe4T09fNai/giphy.gif)
 
 # Project Title
 
