@@ -1,4 +1,4 @@
-INSERT MANDATORY GIF
+![Rehead late-night show host](https://media.giphy.com/media/elgxQUCXCC7GNPFkQv/giphy.gif)
 
 # Project Title
 
