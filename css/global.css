@@ -1,0 +1,56 @@
+/* FONTS USED */
+
+@font-face {
+  font-family: 'Oswald-medium';
+  src: url('../fonts/Oswald-VariableFont_wght.woff') format('woff');
+  src: url('../fonts/Oswald-VariableFont_wght.woff2') format('woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Oswald-regular';
+  src: url('..//fonts/Oswald-VariableFont_wght.woff') format('woff');
+  src: url('../fonts/Oswald-VariableFont_wght.woff2') format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat-regular';
+  src: url('../fonts/Montserrat-VariableFont_wght.woff') format('woff');
+  src: url('../fonts/Montserrat-VariableFont_wght.woff2') format('woff2');
+  font-weight: 400;
+}
+
+/* --- --- --- --- --- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+}
+
+/* DOCUMENT COLOURS */
+
+:root {
+  --dark_bg-color: #000000;
+  --less-dark-bg-color: #333333;
+  --light-bg-color: #ffffff;
+
+  --dark-text-color: #000000;
+  --light-text-color: #ffffff;
+}
+
+/* --- --- --- --- --- */
+
+/* FONT STYLES */
+
+h1,
+h2 {
+  font-family: 'Oswald-medium', sans-serif;
+}
+
+p {
+  font-family: 'Montserrat-regular', sans-serif;
+}
