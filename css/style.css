@@ -1,0 +1,113 @@
+/* --- HEADER ---> */
+
+header {
+  height: auto;
+  width: 100%;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  position: relative;
+  background-color: var(--dark_bg-color);
+}
+
+h1.useless-heading {
+  color: var(--light-text-color);
+}
+
+/* Kurvaturen på "Header" */
+
+header:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1rem;
+  width: 100%;
+  background-color: white;
+  border-top-left-radius: 50% 100%;
+  user-select: none;
+}
+
+/* <--- --- */
+
+/* --- MAIN ---> */
+
+main {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  flex: 1 0 auto;
+
+  /* Testar olika display-alternativ för att få svg:n att bete sig rätt*/
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Behållaren händelserna utgår från. */
+#action-container {
+  width: fit-content;
+  max-width: 50%;
+  padding: 0rem 1rem;
+
+  /* Testar olika display-alternativ för att få svg:n att bete sig rätt*/
+  /*   position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  text-align: center; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#action-container p {
+  position: absolute;
+}
+
+/* <--- --- */
+
+/* --- FOOTER ---> */
+
+footer {
+  height: 2rem;
+  width: 100%;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background-color: var(--dark_bg-color);
+  position: relative;
+  bottom: 0;
+}
+
+/* Kurvaturen på "Footer" */
+
+footer:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  width: 100%;
+  background-color: white;
+  border-top-left-radius: 50% 100%;
+  user-select: none;
+}
+
+/* --- OTHER useless stuff ---> */
+
+/* Klass för att gömma element */
+
+.hidden {
+  visibility: hidden;
+}
+
+.positionAbsolute {
+  position: absolute;
+}
+
+.turnDemonRed {
+  fill: var(--demon-red);
+  transition-property: fill;
+  transition: ease 2s;
+}
+
+/* <--- --- */

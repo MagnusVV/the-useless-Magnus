@@ -29,6 +29,11 @@
 
 body {
   margin: 0 auto;
+  height: 100vh;
+  /* Flex-box är lättare att arbeta med här. Kanske tar bort det senare. */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* DOCUMENT COLOURS */
@@ -40,6 +45,8 @@ body {
 
   --dark-text-color: #000000;
   --light-text-color: #ffffff;
+
+  --demon-red: rgb(160, 22, 22);
 }
 
 /* --- --- --- --- --- */
@@ -54,3 +61,5 @@ h2 {
 p {
   font-family: 'Montserrat-regular', sans-serif;
 }
+
+/* --- --- --- --- --- */
