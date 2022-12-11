@@ -35,6 +35,7 @@ main {
   height: auto;
   padding: 0.5rem 1rem 0.5rem 1rem;
   flex: 1 0 auto;
+  position: relative;
 
   /* Testar olika display-alternativ för att få svg:n att bete sig rätt*/
 

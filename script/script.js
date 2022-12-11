@@ -111,7 +111,7 @@ actionContainer.addEventListener('click', () => {
       uselessMainHeading.classList.remove('uselessHeading');
       uselessMainHeading.classList.add('turnDemonRed');
 
-      prettyWolfImg.classList.add('exitStageLeft');
+      prettyWolfImg.classList.add('exitStageLeft', 'hidden');
 
       setTimeout(() => {
         uselessMainHeading.textContent = "Why don't you... move around?";
@@ -145,9 +145,21 @@ actionContainer.addEventListener('click', () => {
 
       /* --- --- --- --- --- --- --- --- --- --- --- */
 
+      /* Skapar en nod med alla ClawDiv:ar för att kunna slumpa ut deras plats på skärmen. (Tack, Google) */
+
       const clawMarks = document.querySelectorAll('.clawContainer');
 
-      console.log(clawMarks);
+      for (let i = 0; i < clawMarks.length; i++) {
+        const clawMark = clawMarks[i];
+
+        clawMark.style.top = `${Math.random() * 100}%`;
+        clawMark.style.left = `${Math.random() * 100}%`;
+        clawMark.style.zIndex = '1';
+
+        console.log(clawMark);
+      }
+
+      /* console.log(clawMarks); */
 
       /* --- --- --- --- --- --- --- --- --- --- --- */
     });
