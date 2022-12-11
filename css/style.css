@@ -57,6 +57,13 @@ main {
   align-items: center;
 }
 
+/* Behållarna för rivmärkes-svg:n */
+
+.clawContainer {
+  width: 20%;
+  height: auto;
+}
+
 /* Bildattribut */
 
 .image {

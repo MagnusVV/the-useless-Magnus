@@ -16,7 +16,7 @@ const actionHeading = document.createElement('h2');
 
 const uselessMainHeading = document.querySelector('h1');
 
-/* Min logotyp som är med en lite stund */
+/* Min logotyp som är med en liten stund */
 
 const wolfsHead = document.querySelector('#wolfsHead');
 
@@ -25,10 +25,14 @@ const wolfsEyes = wolfsHead.querySelector('#wolfsEyes');
 /* Objekt med sökvägar till bilder och ljud */
 
 const uselessResources = {
-  images: { prettyWolf: './images/Crimson-Tribal-Wolf.svg' },
+  images: {
+    prettyWolf: './images/Crimson-Tribal-Wolf.svg',
+    clawRend:
+      './images/vecteezy_claws-scratching-illustration-vector-design_10990397.svg',
+  },
   soundEffects: {
     howl: ['./sound_effects/wolf-howl-6310.mp3', 'audio/mpeg'],
-    strike: './sound_effects/wolf-howl-6310.mp3',
+    strike: ['./sound_effects/wolf-howl-6310.mp3', 'audio/mpeg'],
   },
 };
 
@@ -36,10 +40,10 @@ const uselessResources = {
 
 let uselessCounter = 0;
 
-/* |--- --- PART I --- ---> */
+/* Inte snyggt, men här kommer en jättestor if-sats */
 
 actionContainer.addEventListener('click', () => {
-  /* ----------------------------------------- */
+  /* |--- --- PART I: click events --- ---> */
 
   if (uselessCounter === 0) {
     actionParagraph.textContent = 'Well?';
@@ -78,7 +82,7 @@ actionContainer.addEventListener('click', () => {
 
     const prettyWolfImg = document.createElement('img');
     prettyWolfImg.src = uselessResources.images.prettyWolf;
-    prettyWolfImg.alt = "Wolf's head created in tribal style";
+    prettyWolfImg.alt = "Wolf's head drawn in tribal style";
     prettyWolfImg.classList.add('image');
 
     secActionContainer.appendChild(prettyWolfImg);
@@ -112,16 +116,46 @@ actionContainer.addEventListener('click', () => {
       setTimeout(() => {
         uselessMainHeading.textContent = "Why don't you... move around?";
       }, 2000);
-    });
 
-    /* --- --- --- --- --- --- --- --- --- --- --- */
+      /* <--- --- PART I: END--- ---| */
+
+      /* --- --- --- --- --- --- --- --- --- --- --- */
+
+      /* |--- --- PART II: Mouse over-events --- ---> */
+
+      /* Med for-loop skapas fyra div:ar som ska innehålla den sista svg:n  */
+
+      for (let i = 0; i < 4; i++) {
+        const mainSection = document.querySelector('main');
+
+        /* Fyra st. div:ar */
+        const clawDiv = document.createElement('div');
+        clawDiv.classList.add('hidden', 'positionAbsolute', 'clawContainer');
+
+        /* Bilderna */
+        const clawMarksImg = document.createElement('img');
+        clawMarksImg.src = uselessResources.images.clawRend;
+        clawMarksImg.alt = 'Stylised image of claw rending marks';
+        clawMarksImg.classList.add('image');
+
+        clawDiv.appendChild(clawMarksImg);
+
+        mainSection.appendChild(clawDiv);
+      }
+
+      /* --- --- --- --- --- --- --- --- --- --- --- */
+
+      const clawMarks = document.querySelectorAll('.clawContainer');
+
+      console.log(clawMarks);
+
+      /* --- --- --- --- --- --- --- --- --- --- --- */
+    });
   }
+  /* ----------------------------------------- */
+  /* --- --- --- --- --- --- --- --- --- --- --- */
 
   uselessCounter++;
 
   console.log(uselessCounter);
 });
-
-/* <--- --- PART I: END--- ---| */
-
-/* |--- --- PART II --- ---> */
