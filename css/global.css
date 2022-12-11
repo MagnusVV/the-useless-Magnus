@@ -62,4 +62,31 @@ p {
   font-family: 'Montserrat-regular', sans-serif;
 }
 
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 250%;
+  }
+
+  h2 {
+    font-size: 200%;
+  }
+
+  p {
+    font-size: 125%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 250%;
+  }
+
+  h2 {
+    font-size: 250%;
+  }
+
+  p {
+    font-size: 150%;
+  }
+}
 /* --- --- --- --- --- */

@@ -43,26 +43,31 @@ main {
   align-items: center;
 }
 
-/* Behållaren händelserna utgår från. */
-#action-container {
-  width: fit-content;
+/* Behållarna händelserna utgår från. */
+
+#action-container-primary,
+#action-container-secondary {
+  height: fit-content;
+  max-height: 25%;
+  width: auto;
   max-width: 50%;
   padding: 0rem 1rem;
-
-  /* Testar olika display-alternativ för att få svg:n att bete sig rätt*/
-  /*   position: absolute;
-  top: 47%;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  text-align: center; */
-
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#action-container p {
+#action-container-primary p {
   position: absolute;
+}
+
+/* Bildattribut */
+
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* <--- --- */
@@ -100,6 +105,8 @@ footer:after {
   visibility: hidden;
 }
 
+/**/
+
 .positionAbsolute {
   position: absolute;
 }
@@ -110,4 +117,30 @@ footer:after {
   transition: ease 2s;
 }
 
+/* Elementet seglar ut från skärmen. */
+
+.exitStageLeft {
+  transition-duration: 2s;
+  transform: translateX(-100vw);
+}
+
+/* Elmentet ligger utanför skärmen. */
+
+.offScreen {
+  position: fixed;
+  transform: translateY(100vh);
+  transition: 0.7s ease;
+}
+
+/* Elmentet som glider in på skärmen. */
+
+.onScreen {
+  transform: translateY(0);
+}
+
+.test {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+}
 /* <--- --- */
