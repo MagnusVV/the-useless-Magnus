@@ -71,8 +71,6 @@ actionContainer.addEventListener('click', () => {
     actionContainer.classList.toggle('offScreen');
     secActionContainer.classList.toggle('onScreen');
 
-    /* ----------------------------------------- */
-
     /* Skapar ett ljudelement som spelar upp efter fördröjning */
 
     const prettyWolfHowl = document.createElement('audio');
@@ -80,6 +78,9 @@ actionContainer.addEventListener('click', () => {
     prettyWolfHowl.type = uselessResources.soundEffects.howl[1];
 
     prettyWolfHowl.play();
+
+    const uselessMainHeading = document.querySelector('h1');
+    uselessMainHeading.textContent = 'AAAOOOOOOOO....!';
 
     /**/
   }
