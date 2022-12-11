@@ -57,10 +57,6 @@ main {
   align-items: center;
 }
 
-#action-container-primary p {
-  position: absolute;
-}
-
 /* Bildattribut */
 
 .image {
@@ -103,6 +99,7 @@ footer:after {
 
 .hidden {
   visibility: hidden;
+  height: 0;
 }
 
 /**/
