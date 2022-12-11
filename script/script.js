@@ -35,27 +35,31 @@ actionContainer.addEventListener('click', () => {
 
   if (uselessCounter === 0) {
     actionParagraph.textContent = 'Well?';
+    /* --- --- --- --- --- --- --- --- --- --- --- */
   } else if (uselessCounter === 1) {
-    /* --- --- --- --- --- --- --- --- --- --- --- */
     actionParagraph.textContent = 'Well???';
-  } else if (uselessCounter === 2) {
     /* --- --- --- --- --- --- --- --- --- --- --- */
+  } else if (uselessCounter === 2) {
     actionHeading.textContent = 'WELL!???';
     actionContainer.replaceChild(actionHeading, actionParagraph);
     actionHeading.classList.add('positionAbsolute');
-  } else if (uselessCounter === 3) {
     /* --- --- --- --- --- --- --- --- --- --- --- */
+  } else if (uselessCounter === 3) {
     actionHeading.classList.toggle('hidden');
     wolfsHead.classList.toggle('hidden');
+    /* --- --- --- --- --- --- --- --- --- --- --- */
   } else if (uselessCounter === 4) {
-    /* --- --- --- --- --- --- --- --- --- --- --- */
     wolfsEyes.classList.add('turnDemonRed');
+    /* --- --- --- --- --- --- --- --- --- --- --- */
   } else if (uselessCounter === 5) {
-    /* --- --- --- --- --- --- --- --- --- --- --- */
     wolfsHead.classList.add('exitStageLeft');
-  } else if (uselessCounter === 6) {
-    /* --- --- --- --- --- --- --- --- --- --- --- */
     wolfsHead.classList.toggle('hidden');
+
+    actionContainer.replaceChild(actionParagraph, actionHeading);
+    actionParagraph.textContent = 'Here again!';
+    /* --- --- --- --- --- --- --- --- --- --- --- */
+  } else if (uselessCounter === 6) {
+    actionParagraph.classList.toggle('hidden');
 
     /* Skapar ett bildelement för att ropa in en rätt så enorm svg-fil */
 
@@ -78,6 +82,8 @@ actionContainer.addEventListener('click', () => {
     prettyWolfHowl.type = uselessResources.soundEffects.howl[1];
 
     prettyWolfHowl.play();
+
+    /* Byter ut texten i H1 för att, varför inte? */
 
     const uselessMainHeading = document.querySelector('h1');
     uselessMainHeading.textContent = 'AAAOOOOOOOO....!';
