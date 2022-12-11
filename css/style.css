@@ -8,7 +8,7 @@ header {
   background-color: var(--dark_bg-color);
 }
 
-h1.useless-heading {
+h1.uselessHeading {
   color: var(--light-text-color);
 }
 
@@ -99,7 +99,6 @@ footer:after {
 
 .hidden {
   visibility: hidden;
-  height: 0;
 }
 
 /**/
@@ -109,8 +108,9 @@ footer:after {
 }
 
 .turnDemonRed {
+  color: var(--demon-red);
   fill: var(--demon-red);
-  transition-property: fill;
+  transition-property: fill, color;
   transition: ease 2s;
 }
 

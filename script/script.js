@@ -14,6 +14,8 @@ actionParagraph.classList.add('positionAbsolute');
 
 const actionHeading = document.createElement('h2');
 
+const uselessMainHeading = document.querySelector('h1');
+
 /* Min logotyp som är med en lite stund */
 
 const wolfsHead = document.querySelector('#wolfsHead');
@@ -95,12 +97,24 @@ actionContainer.addEventListener('click', () => {
 
     /* Byter ut texten i H1 för att, varför inte? */
 
-    const uselessMainHeading = document.querySelector('h1');
     uselessMainHeading.textContent = 'AAAOOOOOOOO....!';
 
     /**/
-  } else if (uselessCounter === 7) {
-    prettyWolfImg.classList.add('exitStageLeft');
+
+    /* Temporär knapp för att avsluta "PART I" och lägga till lite roliga färger och byta ut lite text i h1*/
+
+    secActionContainer.addEventListener('click', () => {
+      uselessMainHeading.classList.remove('uselessHeading');
+      uselessMainHeading.classList.add('turnDemonRed');
+
+      prettyWolfImg.classList.add('exitStageLeft');
+
+      setTimeout(() => {
+        uselessMainHeading.textContent = "Why don't you... move around?";
+      }, 2000);
+    });
+
+    /* --- --- --- --- --- --- --- --- --- --- --- */
   }
 
   uselessCounter++;
