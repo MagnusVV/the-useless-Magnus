@@ -182,8 +182,6 @@ actionContainer.addEventListener('click', () => {
           clawStrikeSound.play();
 
           secondUselessCounter++;
-
-          console.log(secondUselessCounter);
         });
         setTimeout(() => {
           mainSection.classList.add('bgTurnDemonRed');

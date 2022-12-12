@@ -38,7 +38,7 @@ body {
 /* DOCUMENT COLOURS */
 
 :root {
-  --dark_bg-color: #000000;
+  --dark-bg-color: #000000;
   --less-dark-bg-color: #333333;
   --light-bg-color: #ffffff;
 
