@@ -30,7 +30,6 @@
 body {
   margin: 0 auto;
   height: 100vh;
-  /* Flex-box är lättare att arbeta med här. Kanske tar bort det senare. */
   display: flex;
   flex-direction: column;
   justify-content: space-between;

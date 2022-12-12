@@ -39,6 +39,7 @@ main {
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 
 /* Behållarna händelserna utgår från. */
@@ -106,6 +107,10 @@ footer:after {
   visibility: hidden;
 }
 
+.opacity {
+  opacity: 0;
+}
+
 /**/
 
 .positionAbsolute {
@@ -116,6 +121,12 @@ footer:after {
   color: var(--demon-red);
   fill: var(--demon-red);
   transition-property: fill, color;
+  transition: ease 2s;
+}
+
+.bgTurnDemonRed {
+  background-color: var(--demon-red);
+  transition-property: all;
   transition: ease 2s;
 }
 
