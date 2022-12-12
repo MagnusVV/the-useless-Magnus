@@ -1,12 +1,15 @@
 ![Jessica](https://media.giphy.com/media/B1bMjDNIwe4T09fNai/giphy.gif)
 
-# Are you useless?
+# Is it useless?
 
-Text about the project. This would also be a great place to link the game on Netlify.
+It's pretty useless. It's got some text, two different kinds of event listeners, one small object, some svg's and some sound effects.
+Oh, and there are a couple of for loops as well!
+
+https://the-useless-magnus.vercel.app/
 
 # Installation
 
-Add the installation instructions.
+It's a webpage.
 
 # Code Review
 
