@@ -171,8 +171,6 @@ actionContainer.addEventListener('click', () => {
 
         /* Bild blir synlig och ljud hörs. */
 
-        let secondUselessCounter = 0;
-
         clawMark.addEventListener('mouseover', () => {
           const clawMarksImg = clawMark.querySelector('img');
           clawMarksImg.classList.remove('opacity');
@@ -180,8 +178,6 @@ actionContainer.addEventListener('click', () => {
           clawStrikeSound.src = uselessResources.soundEffects.strike[0];
           clawStrikeSound.type = uselessResources.soundEffects.strike[1];
           clawStrikeSound.play();
-
-          secondUselessCounter++;
         });
         setTimeout(() => {
           mainSection.classList.add('bgTurnDemonRed');
