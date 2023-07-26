@@ -1,5 +1,7 @@
 ![Jessica](https://media.giphy.com/media/B1bMjDNIwe4T09fNai/giphy.gif)
 
+The project for the course in JS. The task was to create a webpage without any inherent purpose, except for the joy of visiting it and interact with it.
+
 # Is it useless?
 
 It's pretty useless. It's got some text, two different kinds of event listeners, one small object, some svg's and some sound effects.
@@ -9,7 +11,7 @@ https://the-useless-magnus.vercel.app/
 
 # Installation
 
-It's a webpage.
+Everything, including images and sound effects, are sorted in a system below the root. It's pretty strightforward to deploy it Netlify, Vercel or such, or you can just use Live Server in VsCode to run it local.
 
 # Code Review 
 
